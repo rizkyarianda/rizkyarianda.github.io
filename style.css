@@ -1,0 +1,298 @@
+body {
+    margin: auto;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1487925876428-ebd8a23ee1d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1129&q=80);
+    
+   
+}
+
+.container {
+    width: 900px;
+    background-color:white;
+    background-image: url(img/p4.png);
+    margin: 320px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 9px 2px rgb(255, 248, 154);
+    text-align: center;
+    box-sizing: border-box;
+    animation: upAndDown 3s infinite alternate-reverse;
+    transition: 1s;
+    
+}
+
+.container:hover {
+    box-shadow: 0 0 30px 9px rgb(255, 248, 154);
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    float: left;
+    margin-left: 20px;
+    border-radius: 50%;
+    position: relative;
+    top : 20px;
+    left: 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.9);
+   
+}
+
+.foto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+.foto span {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(1, 1, 2, 0.9);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    line-height: 150px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    overflow: hidden;
+    transition: .5s;
+    opacity: 1;
+    z-index: 9999;
+    transform: rotate(0);
+}
+
+.foto:hover span {
+    opacity: 0;
+    transform: rotate(360deg) scale(0);
+}
+h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    animation: blink 1s linear infinite alternate-reverse;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+
+/* gambar astronot */
+.astro{
+    width: 200px;
+    height: 255px;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    animation:  upAndDown 5s infinite alternate-reverse;
+    z-index: -999;
+}
+
+.astro img {
+    -webkit-filter: drop-shadow(0 0 4px  rgb(255, 248, 154));
+    filter: drop-shadow (0 0 4px  rgb(255, 248, 154));
+}
+/*  */
+
+/* bagian media-sosial */
+.media {
+    width: 300px;
+    height: 30px;
+    margin: 12px auto;
+    margin-left: 41%;
+    text-align: center;
+    padding-left: 120px;
+    box-sizing: border-box;
+}
+
+.medsos li {
+    float: left;
+    margin-right: 15px;
+    
+}
+
+
+.medsos li img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+    transition: .5s;
+    
+}
+
+.medsos li:hover img {
+    filter: grayscale(0);
+}
+/*  */
+
+/* animasi bintang */
+.bintang {
+    color: white;
+    font-size: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    animation: bintangJatuh 5s infinite ;
+    z-index: -9999;
+}
+
+.bintang2 {
+    color: white;
+    font-size: 3px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    right: 600px;
+    animation: bintangJatuh 5s 5s infinite ;
+    z-index: -9999;
+}
+
+.bintang3 {
+    color: white;
+    font-size: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    right: 390px;
+    animation: bintangJatuh 5s 2s infinite ;
+    z-index: -9999;
+}
+
+.bintang4 {
+    color: white;
+    font-size: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    animation: bintangJatuh 5s infinite ;
+    z-index: -9999;
+}
+
+.bintang5 {
+    color: white;
+    font-size: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 790px;
+    animation: bintangJatuh 5s 8s infinite ;
+    z-index: -9999;
+}
+
+.bintang6 {
+    color: white;
+    font-size: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    background: transparent;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    animation: bintangJatuh 5s 4s infinite ;
+    z-index: -9999;
+}
+/* clear */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* animasi */
+
+@keyframes upAndDown{
+    0% {
+        transform: translateY(-20px);
+    }
+
+    
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes blink{
+    0%{color:black;}
+    
+    100%{color: red;}
+    }
+
+@keyframes bintangJatuh {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-329px) translateY(300px);
+        opacity: 0;
+    }
+}
+
+@keyframes rotateBg {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
